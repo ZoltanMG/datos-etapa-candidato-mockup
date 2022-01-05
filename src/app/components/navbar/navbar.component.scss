@@ -1,0 +1,21 @@
+nav {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    box-shadow: 0px 0px 50px  rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 40px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.cerrar-sesion a {
+    color: #78B52D;
+    font-weight: 700;
+    cursor: pointer;
+}
