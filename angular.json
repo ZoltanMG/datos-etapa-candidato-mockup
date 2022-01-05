@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "datos-etapas-candidato"
+    }
+  },
+  "defaultProject": "datos-etapas-candidato",
+  "cli": {
+    "analytics": "c0bfff2e-ab58-43d6-8a78-de7bd53da57b"
+  }
 }
