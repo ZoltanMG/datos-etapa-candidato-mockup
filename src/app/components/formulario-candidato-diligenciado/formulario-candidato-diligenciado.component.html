@@ -1,1 +1,67 @@
-<p>formulario-candidato-diligenciado works!</p>
+<section id="crear-candidatos" class="contenedor-candidatos">
+    <h2>DATOS DEL CANDIDATO</h2>
+    <form action="">
+        <div class="info-personal">
+            <div class="nombre-completo">
+                <input type="text" placeholder="Nombres*" class="outline" value="Carlos Andrés">
+                <input type="text" placeholder="Apellidos*" class="outline" value="Contreras Hernandez">
+            </div>
+            <input type="text" placeholder="Correo electronico*" class="outline" id="email"
+                value="carlos.contreras@gmail.com">
+            <div class="hoja-file">
+                <label for="hoja-vida">Hoja de vida<p class="asterisco">*</p></label>
+                <div class="image-file">
+                    <a href="">hoja-de-vida.pdf 🢃</a>
+                </div>
+            </div>
+            <div class="image-file-upload">
+                <img src="https://icon-library.com/images/upload-image-icon-png/upload-image-icon-png-29.jpg" alt="icono upload">
+                <p>Subir hoja de vida</p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="salario">
+                <label for="aspiracion">Aspiración salarial<p class="asterisco">*</p></label>
+                <div class="input-num">
+                    <p>$</p>
+                    <input type="number" name="aspiracion" class="outline" id="number" value="2500000">
+                </div>
+            </div>
+            <div class="cargo">
+                <label for="select">Cargo que aspira <p class="asterisco">*</p></label>
+                <select name="OS" id="select" class="outline">
+                    <option value="0">Selecciona una opción</option>
+                    <option value="1">CALIDAD</option>
+                    <option selected value="2">DLLO</option>
+                    <option value="3">DEVOPS</option>
+                    <option value="4">Otro</option>
+                </select>
+            </div>
+            <hr>
+            <div class="referido">
+                <h3>Recomendado por:</h3>
+                <div class="radio">
+                    <div class="cont-check">
+                        <input type="radio" name="recomendado_por" value="empleado" id="empleado" checked>
+                        <label for="empleado">EMPLEADO</label>
+                    </div>
+                    <div class="cont-check">
+                        <input type="radio" name="recomendado_por" value="aliado" id="aliado">
+                        <label for="aliado">ALIADO</label>
+                    </div>
+                </div>
+                <div class="info-personal">
+                    <div class="nombre-completo">
+                        <input type="text" placeholder="Nombres" class="outline" value="Miguel Ángel">
+                        <input type="text" placeholder="Apellidos" class="outline" value="Salazar Martinez">
+                    </div>
+                    <input type="text" placeholder="Correo electronico" class="outline" id="email"
+                        value="miguel.salazar@devco.com.co">
+
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Actualizar datos" id="enviar">
+    </form>
+</section>
