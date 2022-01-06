@@ -1,31 +1,21 @@
-<section id="crear-candidatos" class="contenedor-candidatos">
-    <h2>DATOS DEL CANDIDATO</h2>
-    <form action="">
+<section>
+    <form action="" id="crear-candidatos" class="contenedor-candidatos">
+        <h2>DATOS DEL CANDIDATO</h2>
         <div class="info-personal">
+            <h4 class="fecha-registro-candidato">Fecha de registro: 01/05/2021</h4>
             <div class="nombre-completo">
                 <input type="text" placeholder="Nombres*" class="outline" value="Carlos Andrés">
                 <input type="text" placeholder="Apellidos*" class="outline" value="Contreras Hernandez">
             </div>
             <input type="text" placeholder="Correo electronico*" class="outline" id="email"
                 value="carlos.contreras@gmail.com">
-            <div class="hoja-file">
-                <label for="hoja-vida">Hoja de vida<p class="asterisco">*</p></label>
-                <div class="image-file">
-                    <a href="">hoja-de-vida.pdf 🢃</a>
-                </div>
-            </div>
-            <div class="image-file-upload">
-                <img src="https://icon-library.com/images/upload-image-icon-png/upload-image-icon-png-29.jpg" alt="icono upload">
-                <p>Subir hoja de vida</p>
-            </div>
         </div>
-        <hr>
         <div>
             <div class="salario">
                 <label for="aspiracion">Aspiración salarial<p class="asterisco">*</p></label>
                 <div class="input-num">
                     <p>$</p>
-                    <input type="number" name="aspiracion" class="outline" id="number" value="2500000">
+                    <input type="number" name="aspiracion" class="outline number" value="2500000">
                 </div>
             </div>
             <div class="cargo">
@@ -37,6 +27,22 @@
                     <option value="3">DEVOPS</option>
                     <option value="4">Otro</option>
                 </select>
+            </div>
+            <div class=" cargo telefono">
+                <label for="">Telefono de contacto <p class="asterisco">*</p></label>
+                <input type="number" class="outline number">
+            </div>
+            <hr>
+            <div class="hoja-file">
+                <label for="hoja-vida">Hoja de vida<p class="asterisco">*</p></label>
+                <div class="image-file">
+                    <a href="">hoja-de-vida.pdf 🢃</a>
+                </div>
+            </div>
+            <div class="image-file-upload">
+                <img src="https://icon-library.com/images/upload-image-icon-png/upload-image-icon-png-29.jpg"
+                    alt="icono upload">
+                <p>Subir hoja de vida</p>
             </div>
             <hr>
             <div class="referido">

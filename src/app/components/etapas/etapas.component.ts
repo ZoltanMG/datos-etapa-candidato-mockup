@@ -8,8 +8,46 @@ import { Component, OnInit } from '@angular/core';
 export class EtapasComponent implements OnInit {
 
   constructor() { }
+  evaluadorEtapaUno = false;
+  evaluadorEtapaDos = false;
+  etapaDos = false;
+  urlContador = 1;
+  urlPrueba = [1] ;
 
   ngOnInit(): void {
+  }
+
+  addUrlPrueba() {
+    this.urlContador +=1;
+    this.urlPrueba.push(this.urlContador);
+  }
+
+  removeUrlPrueba(idx: number) {
+    this.urlPrueba.splice(idx, 1);
+  }
+
+  agregarEvaluadorEtapaUno() {
+    this.evaluadorEtapaUno = true
+  }
+
+  eliminarEvaluadorEtapaUno() {
+    this.evaluadorEtapaUno = false
+  }
+
+  agregarEtapa() {
+    this.etapaDos = true
+  }
+
+  eliminarEtapaDos() {
+    this.etapaDos = false
+  }
+
+  agregarEvaluadorEtapaDos() {
+    this.evaluadorEtapaDos = true
+  }
+
+  eliminarEvaluadorEtapaDos() {
+    this.evaluadorEtapaDos = false
   }
 
 }
