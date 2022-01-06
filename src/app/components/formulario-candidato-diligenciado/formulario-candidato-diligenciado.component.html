@@ -11,6 +11,10 @@
                 value="carlos.contreras@gmail.com">
         </div>
         <div>
+            <div class=" cargo telefono">
+                <label for="">Telefono de contacto <p class="asterisco">*</p></label>
+                <input type="number" class="outline number" value="3212586040">
+            </div>
             <div class="salario">
                 <label for="aspiracion">Aspiración salarial<p class="asterisco">*</p></label>
                 <div class="input-num">
@@ -20,18 +24,15 @@
             </div>
             <div class="cargo">
                 <label for="select">Cargo que aspira <p class="asterisco">*</p></label>
-                <select name="OS" id="select" class="outline">
+                <select name="OS" id="select" class="outline" [(ngModel)]="cargo">
                     <option value="0">Selecciona una opción</option>
-                    <option value="1">CALIDAD</option>
-                    <option selected value="2">DLLO</option>
-                    <option value="3">DEVOPS</option>
-                    <option value="4">Otro</option>
+                    <option value="calidad">CALIDAD</option>
+                    <option selected value="dllo">DLLO</option>
+                    <option value="devops">DEVOPS</option>
+                    <option value="otro">Otro</option>
                 </select>
             </div>
-            <div class=" cargo telefono">
-                <label for="">Telefono de contacto <p class="asterisco">*</p></label>
-                <input type="number" class="outline number" value="3212586040">
-            </div>
+            <input *ngIf="cargo === 'otro'" class="outline input-estandar otro" placeholder="Cargo que aspira *" type="text">
             <hr>
             <div class="hoja-file">
                 <label for="hoja-vida">Hoja de vida<p class="asterisco">*</p></label>
@@ -42,7 +43,7 @@
             <div class="image-file-upload">
                 <img src="https://icon-library.com/images/upload-image-icon-png/upload-image-icon-png-29.jpg"
                     alt="icono upload">
-                <p>Subir hoja de vida</p>
+                <p>Agregar hoja de vida</p>
             </div>
             <hr>
             <div class="referido">
