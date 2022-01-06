@@ -34,6 +34,12 @@
     margin: 10px 0px;
 }
 
+.input-estandar {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: solid 1px grey;
+}
+
 .nombre-completo input {
     width: 49%;
     padding: 10px 15px;
@@ -46,6 +52,11 @@
     border-radius: 4px;
     border: solid 1px grey;
     margin-bottom: 10px;
+}
+
+.otro {
+    width: 100%;
+    margin-top: 5px;
 }
 
 .hoja-file {
@@ -107,7 +118,11 @@ label {
 }
 
 .telefono {
-    margin: 5px 0px;
+    margin-bottom: 5px;
+}
+
+hr {
+    margin: 10px 0px;
 }
 
 #select {
@@ -161,7 +176,7 @@ label {
     padding: 10px 15px;
     border-radius: 4px;
     background-color: #679C30;
-    margin: 10px;
+    margin: 10px 0px;
     color: white;
     cursor: pointer;
     transition: 290ms;

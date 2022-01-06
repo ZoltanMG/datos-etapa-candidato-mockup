@@ -12,4 +12,6 @@ export class FormularioCandidatoDiligenciadoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cargo = 'otro';
+
 }
