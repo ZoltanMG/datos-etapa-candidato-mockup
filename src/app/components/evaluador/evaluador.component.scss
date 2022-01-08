@@ -1,0 +1,96 @@
+.contenedor-datos-evaluador {
+    margin: 0px 10px;
+}
+
+.btn-guardar {
+    background-color: #B2D17D;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 290ms;
+}
+
+.btn-guardar:hover {
+    background-color: #78B52D;
+    transition: 290ms;
+}
+
+.datos-evaluador {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.datos-evaluador input{
+    width: 49%;
+}
+
+.contenedor-comentarios-evaluador {
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado-notas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #97BEBF;
+    border-radius: 4px 4px 0px 0px;
+    color:  grey;
+    font-weight: bold;
+}
+
+.contenedor-items {
+    border: 2px solid #97BEBF;
+    border-top: none;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.contenedor-items button{
+    margin-right: 10px;
+}
+
+.contenedor-criterio {
+    width: 80%;
+}
+
+.criterio {
+    width: 90%;
+}
+
+.nota {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.contenedor-calificacion {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.calificacion {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: gray;
+    padding: 10px 15px;
+}
+
+.contenedor-comentarios-evaluador label {
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+}
