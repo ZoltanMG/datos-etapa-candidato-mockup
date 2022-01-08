@@ -1,3 +1,9 @@
+:host {
+    width: 60%;
+    min-width: 815px;
+
+}
+
 #etapas {
     background-color: white;
     border-radius: 9px;
@@ -5,7 +11,6 @@
     padding: 30px 0px;
     margin: 0px 10px;
     margin-bottom: 50px;
-    width: 700px;
 }
 
 .contenedor-etapas {
@@ -51,29 +56,10 @@
     width: 95%;
 }
 
-.etapa2 {
-    padding: 10px 15px;
-    font-weight: 700;
-}
-
 .titulo-evaluador {
     color: #78B52D;
     font-size: 18px;
-}
-
-.btn-guardar {
-    background-color: #B2D17D;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 15px;
-    transition: 290ms;
-    cursor: pointer;
-}
-
-.btn-guardar:hover {
-    background-color: #78B52D;
-    transition: 290ms;
+    margin: 10px;
 }
 
 .titulo-eliminar {
@@ -82,43 +68,33 @@
     justify-content: space-between;
 }
 
-.datos-evaluador {
+.contenedor-evaluador {
+    background-color: #eee;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.contenedor-evaluador button {
+    margin-right: 10px;
+}
+
+.btn-etapa2 {
+    background-color: #3B656B;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    transition: 280ms;
+}
+
+.btn-etapa2:hover {
+    background-color: #194144;
+    transition: 280ms;
+}
+
+.contenedor-btn-etapa {
     display: flex;
-    justify-content: space-between;
-    margin: 5px 0px;
-}
-
-.datos-evaluador input{
-    width: 49%;
-}
-
-.contenedor-calificacion {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5px 0px;
-    color: #575756;
-}
-
-.contenedor-calificacion labe {
-    color: #575756;
-
-}
-
-.contenedor-calificacionr input{
-    width: 40%;
-}
-
-.contenedor-comentarios-evaluador {
-    display: flex;
-    flex-direction: column;
-}
-
-.contenedor-comentarios-evaluador label {
-    color: #575756;
-}
-
-.calificacion {
-    width: 100px;
-    text-align: center;
+    justify-content: center;
 }
