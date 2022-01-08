@@ -3,104 +3,50 @@
 
         <article>
             <h1 class="titulo-etapa">ETAPA 1</h1>
-            <div class="section">
+            <div class="separador10">
                 <div *ngFor="let url of urlPrueba; index as idx" class="x-url">
-                    <input type="text" class="input-standar" placeholder="Url repositorio prueba Técnica*">
-                    <button (click)="removeUrlPrueba(idx)" class="x">x</button>
+                    <input type="text" class="input-estandar" placeholder="Url repositorio prueba Técnica*">
+                    <button (click)="removeUrlPrueba(idx)" class="btn-x">x</button>
                 </div>
                 <button (click)="addUrlPrueba()" class="btn-agregar">+ Agregar url</button>
             </div>
-            <div class="section">
+            <div class="contenedor-evaluador separador10">
                 <h2 class="titulo-evaluador">Evaluador 1</h2>
                 <app-evaluador></app-evaluador>
-                <!-- <div>
-                    <div class="datos-evaluador">
-                        <input type="text" class="input-standar" placeholder="Nombre evaluador *">
-                        <input type="text" class="input-standar" placeholder="Correo evaluador *">
-                    </div>
-                    <div class="contenedor-comentarios-evaluador">
-                        <label for="">Cometarios</label>
-                        <textarea name="" id="" rows="4" class="textarea"></textarea>
-                    </div>
-                    <div class="contenedor-calificacion">
-                        <label for="">Calificación (1.0 a 5.0):</label>
-                        <input type="number" class="input-standar calificacion" placeholder="0.0">
-                    </div>
-                </div>
-                <button class="btn-guardar">Guardar</button> -->
             </div>
             <button *ngIf="!evaluadorEtapaUno" (click)="agregarEvaluadorEtapaUno()" class="btn-agregar">+ Agregar
                 Evaluador</button>
-            <div *ngIf="evaluadorEtapaUno" class="section">
+            <div *ngIf="evaluadorEtapaUno" class="contenedor-evaluador separador10">
                 <div class="titulo-eliminar">
                     <h2 class="titulo-evaluador">Evaluador 2</h2>
-                    <button (click)="eliminarEvaluadorEtapaUno()" class="eliminar"> X Eliminar</button>
+                    <button (click)="eliminarEvaluadorEtapaUno()" class="btn-eliminar-cerrar"> X Eliminar</button>
                 </div>
-                <div>
-                    <div class="datos-evaluador">
-                        <input type="text" class="input-standar" placeholder="Nombre evaluador *">
-                        <input type="text" class="input-standar" placeholder="Correo evaluador *">
-                    </div>
-                    <div class="contenedor-comentarios-evaluador">
-                        <label for="">Cometarios</label>
-                        <textarea name="" id="" rows="4" class="textarea"></textarea>
-                    </div>
-                    <div class="contenedor-calificacion">
-                        <label for="">Calificación (1.0 a 5.0):</label>
-                        <input type="number" class="input-standar calificacion" placeholder="0.0">
-                    </div>
-                </div>
-                <button class="btn-guardar">Guardar</button>
+                <app-evaluador></app-evaluador>
             </div>
         </article>
-        <button *ngIf="!etapaDos && evaluadorEtapaUno" (click)="eliminarEtapaDos()" (click)="agregarEtapa()"
-            class="btn-agregar etapa2">ETAPA 2</button>
-        <article *ngIf="etapaDos" class="section">
+        <div class="contenedor-btn-etapa">
+            <button *ngIf="!etapaDos && evaluadorEtapaUno" (click)="eliminarEtapaDos()" (click)="agregarEtapa()"
+                class="btn-etapa2">COMENZAR SEGUNDA ETAPA</button>
+        </div>
+        <article *ngIf="etapaDos" class="separador10">
             <hr>
             <div class="titulo-eliminar">
-                <h1 class="titulo-etapa">ETAPA 2</h1>
-                <button (click)="eliminarEtapaDos()" class="eliminar"> X Eliminar etapa</button>
+                <h1 class="titulo-etapa separador10">ETAPA 2</h1>
+                <button (click)="eliminarEtapaDos()" class="btn-eliminar-cerrar"> X Eliminar etapa</button>
             </div>
-            <div class="section">
+            <div class=" contenedor-evaluador separador10">
                 <h2 class="titulo-evaluador">Evaluador 1</h2>
-                <div>
-                    <div class="datos-evaluador">
-                        <input type="text" class="input-standar" placeholder="Nombre evaluador *">
-                        <input type="text" class="input-standar" placeholder="Correo evaluador *">
-                    </div>
-                    <div class="contenedor-comentarios-evaluador">
-                        <label for="">Cometarios</label>
-                        <textarea name="" id="" rows="4" class="textarea"></textarea>
-                    </div>
-                    <div class="contenedor-calificacion">
-                        <label for="">Calificación (1.0 a 5.0):</label>
-                        <input type="number" class="input-standar calificacion" placeholder="0.0">
-                    </div>
-                </div>
-                <button class="btn-guardar">Guardar</button>
+                <app-evaluador></app-evaluador>
+                
             </div>
             <button *ngIf="!evaluadorEtapaDos" (click)="agregarEvaluadorEtapaDos()" class="btn-agregar">+ Agregar
                 Evaluador</button>
-            <div *ngIf="evaluadorEtapaDos" class="section">
+            <div *ngIf="evaluadorEtapaDos" class="contenedor-evaluador separador10">
                 <div class="titulo-eliminar">
                     <h2 class="titulo-evaluador">Evaluador 2</h2>
-                    <button (click)="eliminarEvaluadorEtapaDos()" class="eliminar"> X Eliminar</button>
+                    <button (click)="eliminarEvaluadorEtapaDos()" class="btn-eliminar-cerrar"> X Eliminar</button>
                 </div>
-                <div>
-                    <div class="datos-evaluador">
-                        <input type="text" class="input-standar" placeholder="Nombre evaluador *">
-                        <input type="text" class="input-standar" placeholder="Correo evaluador *">
-                    </div>
-                    <div class="contenedor-comentarios-evaluador">
-                        <label for="">Cometarios</label>
-                        <textarea name="" id="" rows="4" class="textarea"></textarea>
-                    </div>
-                    <div class="contenedor-calificacion">
-                        <label for="">Calificación (1.0 a 5.0):</label>
-                        <input type="number" class="input-standar calificacion" placeholder="0.0">
-                    </div>
-                </div>
-                <button class="btn-guardar">Guardar</button>
+                <app-evaluador></app-evaluador>
             </div>
         </article>
     </div>

@@ -1,30 +1,30 @@
 <section>
-    <form action="" id="crear-candidatos" class="contenedor-candidatos">
+    <form action="" id="crear-candidatos">
         <h2>DATOS DEL CANDIDATO</h2>
         <div class="info-personal">
             <h4 class="fecha-registro-candidato">Fecha de registro: 01/05/2021</h4>
             <div class="nombre-completo">
-                <input type="text" placeholder="Nombres*" class="outline" value="Carlos Andrés">
-                <input type="text" placeholder="Apellidos*" class="outline" value="Contreras Hernandez">
+                <input type="text" placeholder="Nombres*" class="input-estandar" value="Carlos Andrés">
+                <input type="text" placeholder="Apellidos*" class="input-estandar" value="Contreras Hernandez">
             </div>
-            <input type="text" placeholder="Correo electronico*" class="outline" id="email"
+            <input type="text" placeholder="Correo electronico*" class="input-estandar email"
                 value="carlos.contreras@gmail.com">
         </div>
         <div>
             <div class=" cargo telefono">
                 <label for="">Telefono de contacto <p class="asterisco">*</p></label>
-                <input type="number" class="outline number" value="3212586040">
+                <input type="number" class="input-estandar" value="3212586040">
             </div>
             <div class="salario">
                 <label for="aspiracion">Aspiración salarial<p class="asterisco">*</p></label>
-                <div class="input-num">
+                <div class="input-salario">
                     <p>$</p>
-                    <input type="number" name="aspiracion" class="outline number" value="2500000">
+                    <input type="number" name="aspiracion" class="input-estandar" value="2500000">
                 </div>
             </div>
             <div class="cargo">
                 <label for="select">Cargo que aspira <p class="asterisco">*</p></label>
-                <select name="OS" id="select" class="outline" [(ngModel)]="cargo">
+                <select name="OS" id="select" class="input-estandar" [(ngModel)]="cargo">
                     <option value="0">Selecciona una opción</option>
                     <option value="calidad">CALIDAD</option>
                     <option selected value="dllo">DLLO</option>
@@ -32,7 +32,7 @@
                     <option value="otro">Otro</option>
                 </select>
             </div>
-            <input *ngIf="cargo === 'otro'" class="outline input-estandar otro" placeholder="Cargo que aspira *" type="text">
+            <input *ngIf="cargo === 'otro'" class="input-estandar otro" placeholder="Cargo que aspira *" type="text">
             <hr>
             <div class="hoja-file">
                 <label for="hoja-vida">Hoja de vida<p class="asterisco">*</p></label>
@@ -60,10 +60,10 @@
                 </div>
                 <div class="info-personal">
                     <div class="nombre-completo">
-                        <input type="text" placeholder="Nombres" class="outline" value="Miguel Ángel">
-                        <input type="text" placeholder="Apellidos" class="outline" value="Salazar Martinez">
+                        <input type="text" placeholder="Nombres" class="input-estandar" value="Miguel Ángel">
+                        <input type="text" placeholder="Apellidos" class="input-estandar" value="Salazar Martinez">
                     </div>
-                    <input type="text" placeholder="Correo electronico" class="outline" id="email"
+                    <input type="text" placeholder="Correo electronico" class="input-estandar email"
                         value="miguel.salazar@devco.com.co">
 
                 </div>

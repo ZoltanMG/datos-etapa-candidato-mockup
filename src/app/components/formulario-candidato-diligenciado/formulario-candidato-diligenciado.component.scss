@@ -1,3 +1,8 @@
+:host {
+    width: 35%;
+    min-width: 538px;
+}
+
 #crear-candidatos {
     padding: 30px;
     height: 100%;
@@ -19,14 +24,6 @@
     justify-content: center;
 }
 
-.outline:focus-visible {
-    outline: solid 1px #78B52D;
-}
-
-.outline:hover {
-    outline: solid 1px #82D17D;
-}
-
 .nombre-completo {
     display: flex;
     justify-content: space-between;
@@ -34,24 +31,11 @@
     margin: 10px 0px;
 }
 
-.input-estandar {
-    padding: 10px 15px;
-    border-radius: 4px;
-    border: solid 1px grey;
-}
-
 .nombre-completo input {
     width: 49%;
     padding: 10px 15px;
     border-radius: 4px;
     border: solid 1px grey;
-}
-
-#email {
-    padding: 10px 15px;
-    border-radius: 4px;
-    border: solid 1px grey;
-    margin-bottom: 10px;
 }
 
 .otro {
@@ -79,11 +63,6 @@
 .hoja-file a:hover {
     background-color: #78B52D;
     transition: 290ms;
-
-}
-
-.asterisco {
-    color: red;
 }
 
 label {
@@ -97,18 +76,13 @@ label {
     margin-bottom: 5px;
 }
 
-.input-num {
+.input-salario {
     display: flex;
     align-items: center;
 }
 
-.input-num p{
+.input-salario p{
     margin-right: 5px;
-}
-.number {
-    padding: 10px 20px;
-    border-radius: 4px;
-    border: 1px solid grey;
 }
 
 .cargo {
@@ -121,12 +95,8 @@ label {
     margin-bottom: 5px;
 }
 
-hr {
-    margin: 10px 0px;
-}
-
 #select {
-    width: 212px;
+    width: 200px;
     padding: 8px 10px;
     border-radius: 4px;
     background-color: white;

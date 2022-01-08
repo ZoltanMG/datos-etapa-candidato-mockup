@@ -1,3 +1,9 @@
+:host {
+    width: 60%;
+    min-width: 815px;
+
+}
+
 #etapas {
     background-color: white;
     border-radius: 9px;
@@ -5,7 +11,6 @@
     padding: 30px 0px;
     margin: 0px 10px;
     margin-bottom: 50px;
-    width: 700px;
 }
 
 .contenedor-etapas {
@@ -40,10 +45,6 @@
     margin-bottom: 10px;
 }
 
-.section {
-    margin: 15px 0px;
-}
-
 .x-url {
     display: flex;
     align-items: center;
@@ -55,92 +56,10 @@
     width: 95%;
 }
 
-.x {
-    background-color: tomato;
-    color: white;
-    padding: 2px 5px;
-    border-radius: 50px;
-    border: none;
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    transition: 290ms;
-    margin-left: 10px;
-}
-
-.x:hover {
-    background-color: red;
-    transition: 290ms;
-}
-
-.input-standar {
-    padding: 10px 15px;
-    border-radius: 4px;
-    border: solid 1px grey;
-}
-
-.input-standar:focus-visible {
-    outline: solid 1px #78B52D;
-}
-
-.input-standar:hover {
-    outline: solid 1px #82D17D;
-}
-
-.btn-agregar {
-    border: none;
-    padding: 3px 10px;
-    border-radius: 4px;
-    color: white;
-    background-color: #6B9699;
-    transition: 290ms;
-    cursor: pointer;
-
-}
-
-.etapa2 {
-    padding: 10px 15px;
-    font-weight: 700;
-}
-
-.btn-agregar:hover {
-    transition: 290ms;
-    background-color: #3B656B;
-}
-
 .titulo-evaluador {
     color: #78B52D;
     font-size: 18px;
-}
-
-.eliminar {
-    background-color: tomato;
-    color: white;
-    padding: 2px 5px;
-    border-radius: 4px;
-    transition: 290ms;
-    border: none;
-    cursor: pointer;
-
-}
-
-.eliminar:hover {
-    background-color: red;
-}
-
-.btn-guardar {
-    background-color: #B2D17D;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 15px;
-    transition: 290ms;
-    cursor: pointer;
-}
-
-.btn-guardar:hover {
-    background-color: #78B52D;
-    transition: 290ms;
+    margin: 10px;
 }
 
 .titulo-eliminar {
@@ -149,59 +68,33 @@
     justify-content: space-between;
 }
 
-.datos-evaluador {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0px;
+.contenedor-evaluador {
+    background-color: #eee;
+    border-radius: 9px;
+    overflow: hidden;
 }
 
-.datos-evaluador input{
-    width: 49%;
+.contenedor-evaluador button {
+    margin-right: 10px;
 }
 
-.contenedor-calificacion {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5px 0px;
-    color: #575756;
-}
-
-.contenedor-calificacion labe {
-    color: #575756;
-
-}
-
-.contenedor-calificacionr input{
-    width: 40%;
-}
-
-.contenedor-comentarios-evaluador {
-    display: flex;
-    flex-direction: column;
-}
-
-.contenedor-comentarios-evaluador label {
-    color: #575756;
-}
-
-.textarea {
-    padding: 10px 15px;
+.btn-etapa2 {
+    background-color: #3B656B;
+    font-size: 18px;
+    font-weight: bold;
     border-radius: 4px;
-    border: solid 1px grey;
-    margin: 5px 0px;
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    transition: 280ms;
 }
 
-
-.textarea:focus-visible {
-    outline: solid 1px #78B52D;
+.btn-etapa2:hover {
+    background-color: #194144;
+    transition: 280ms;
 }
 
-.textarea:hover {
-    outline: solid 1px #82D17D;
-}
-
-.calificacion {
-    width: 100px;
-    text-align: center;
+.contenedor-btn-etapa {
+    display: flex;
+    justify-content: center;
 }
