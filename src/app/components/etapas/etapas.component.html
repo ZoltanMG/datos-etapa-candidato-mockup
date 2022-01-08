@@ -12,7 +12,8 @@
             </div>
             <div class="section">
                 <h2 class="titulo-evaluador">Evaluador 1</h2>
-                <div>
+                <app-evaluador></app-evaluador>
+                <!-- <div>
                     <div class="datos-evaluador">
                         <input type="text" class="input-standar" placeholder="Nombre evaluador *">
                         <input type="text" class="input-standar" placeholder="Correo evaluador *">
@@ -26,7 +27,7 @@
                         <input type="number" class="input-standar calificacion" placeholder="0.0">
                     </div>
                 </div>
-                <button class="btn-guardar">Guardar</button>
+                <button class="btn-guardar">Guardar</button> -->
             </div>
             <button *ngIf="!evaluadorEtapaUno" (click)="agregarEvaluadorEtapaUno()" class="btn-agregar">+ Agregar
                 Evaluador</button>

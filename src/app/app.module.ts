@@ -8,6 +8,7 @@ import { InformacionCandidatoComponent } from './components/informacion-candidat
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormularioCandidatoDiligenciadoComponent } from './components/formulario-candidato-diligenciado/formulario-candidato-diligenciado.component';
 import { EtapasComponent } from './components/etapas/etapas.component';
+import { EvaluadorComponent } from './components/evaluador/evaluador.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EtapasComponent } from './components/etapas/etapas.component';
     InformacionCandidatoComponent,
     NavbarComponent,
     FormularioCandidatoDiligenciadoComponent,
-    EtapasComponent
+    EtapasComponent,
+    EvaluadorComponent
   ],
   imports: [
     BrowserModule,
