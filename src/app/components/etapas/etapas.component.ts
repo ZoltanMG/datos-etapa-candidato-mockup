@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-etapas',
   templateUrl: './etapas.component.html',
-  styleUrls: ['./etapas.component.scss']
+  styleUrls: ['./etapas.component.scss', '../../../assets/scss/global.scss']
 })
 export class EtapasComponent implements OnInit {
 
@@ -18,7 +18,7 @@ export class EtapasComponent implements OnInit {
   }
 
   addUrlPrueba() {
-    this.urlContador +=1;
+    this.urlContador += 1;
     this.urlPrueba.push(this.urlContador);
   }
 
@@ -27,27 +27,27 @@ export class EtapasComponent implements OnInit {
   }
 
   agregarEvaluadorEtapaUno() {
-    this.evaluadorEtapaUno = true
+    this.evaluadorEtapaUno = true;
   }
 
   eliminarEvaluadorEtapaUno() {
-    this.evaluadorEtapaUno = false
+    this.evaluadorEtapaUno = false;
   }
 
   agregarEtapa() {
-    this.etapaDos = true
+    this.etapaDos = true;
   }
 
   eliminarEtapaDos() {
-    this.etapaDos = false
+    this.etapaDos = false;
   }
 
   agregarEvaluadorEtapaDos() {
-    this.evaluadorEtapaDos = true
+    this.evaluadorEtapaDos = true;
   }
 
   eliminarEvaluadorEtapaDos() {
-    this.evaluadorEtapaDos = false
+    this.evaluadorEtapaDos = false;
   }
 
 }

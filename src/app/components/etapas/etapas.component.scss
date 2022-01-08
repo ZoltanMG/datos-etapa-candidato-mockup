@@ -40,10 +40,6 @@
     margin-bottom: 10px;
 }
 
-.section {
-    margin: 15px 0px;
-}
-
 .x-url {
     display: flex;
     align-items: center;
@@ -55,77 +51,14 @@
     width: 95%;
 }
 
-.x {
-    background-color: tomato;
-    color: white;
-    padding: 2px 5px;
-    border-radius: 50px;
-    border: none;
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    transition: 290ms;
-    margin-left: 10px;
-}
-
-.x:hover {
-    background-color: red;
-    transition: 290ms;
-}
-
-.input-standar {
-    padding: 10px 15px;
-    border-radius: 4px;
-    border: solid 1px grey;
-}
-
-.input-standar:focus-visible {
-    outline: solid 1px #78B52D;
-}
-
-.input-standar:hover {
-    outline: solid 1px #82D17D;
-}
-
-.btn-agregar {
-    border: none;
-    padding: 3px 10px;
-    border-radius: 4px;
-    color: white;
-    background-color: #6B9699;
-    transition: 290ms;
-    cursor: pointer;
-
-}
-
 .etapa2 {
     padding: 10px 15px;
     font-weight: 700;
 }
 
-.btn-agregar:hover {
-    transition: 290ms;
-    background-color: #3B656B;
-}
-
 .titulo-evaluador {
     color: #78B52D;
     font-size: 18px;
-}
-
-.eliminar {
-    background-color: tomato;
-    color: white;
-    padding: 2px 5px;
-    border-radius: 4px;
-    transition: 290ms;
-    border: none;
-    cursor: pointer;
-
-}
-
-.eliminar:hover {
-    background-color: red;
 }
 
 .btn-guardar {
@@ -183,22 +116,6 @@
 
 .contenedor-comentarios-evaluador label {
     color: #575756;
-}
-
-.textarea {
-    padding: 10px 15px;
-    border-radius: 4px;
-    border: solid 1px grey;
-    margin: 5px 0px;
-}
-
-
-.textarea:focus-visible {
-    outline: solid 1px #78B52D;
-}
-
-.textarea:hover {
-    outline: solid 1px #82D17D;
 }
 
 .calificacion {
