@@ -121,6 +121,9 @@
               "devServerTarget": "datos-etapas-candidato:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
