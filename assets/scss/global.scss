@@ -1,0 +1,115 @@
+// caracteres especiales
+
+.asterisco {
+    color: red;
+}
+
+//inputs
+
+.input-estandar {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: solid 1px grey;
+}
+
+.input-estandar:focus-visible {
+    outline: solid 1px #78B52D;
+}
+
+.input-estandar:hover {
+    outline: solid 1px #82D17D;
+}
+
+.email {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: solid 1px grey;
+    margin-bottom: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+textarea {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: solid 1px grey;
+    margin: 5px 0px;
+}
+
+textarea:focus-visible {
+    outline: solid 1px #78B52D;
+}
+
+textarea:hover {
+    outline: solid 1px #82D17D;
+}
+
+//
+
+hr {
+    margin: 10px 0px;
+}
+
+.separador10 {
+    margin: 10px 0px;
+}
+
+.separador5 {
+    margin: 5px 0px;
+}
+// botones
+
+.btn-agregar {
+    border: none;
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #B2B2B2;
+    transition: 290ms;
+    cursor: pointer;
+
+}
+
+.btn-agregar:hover {
+    transition: 290ms;
+    background-color: #6B9699;
+}
+
+.btn-x {
+    background-color: #B2B2B2;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50px;
+    border: none;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    transition: 290ms;
+    margin-left: 10px;
+}
+
+.btn-x:hover {
+    background-color: tomato;
+    transition: 290ms;
+}
+
+.btn-eliminar-cerrar {
+    background-color: tomato;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    transition: 290ms;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn-eliminar-cerrar:hover {
+    background-color: red;
+}
