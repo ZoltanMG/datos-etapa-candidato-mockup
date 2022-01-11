@@ -1,15 +1,40 @@
 :host {
     width: 35%;
-    min-width: 538px;
+    min-width: 450px;
 }
 
 #crear-candidatos {
     padding: 30px;
-    height: 100%;
-    box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.2);
-    background-color: white;
-    border-radius: 9px;
+    padding-bottom: 0px;
+    overflow-y: scroll;
+    max-height: 80vh;
+    box-sizing: border-box;
+}
+
+#crear-candidatos::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#crear-candidatos::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+#crear-candidatos::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+#crear-candidatos::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.contenedor-form-candidato{
     margin: 0px 10px;
+    background-color: white;
+    box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+    overflow: hidden;
 }
 
 #crear-candidatos h2 {
@@ -129,7 +154,6 @@ label {
     color: white;
     font-size: 20px;
     font-weight: bolder;
-    border-radius: 4px;
     cursor: pointer;
     transition: 290ms;
 }
