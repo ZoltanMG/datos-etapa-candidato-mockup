@@ -9,8 +9,14 @@
     border-radius: 9px;
     box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.2);
     padding: 30px 0px;
+    padding-bottom: 0px;
     margin: 0px 10px;
     margin-bottom: 50px;
+    overflow: hidden;
+}
+
+article {
+    margin-bottom: 10px;
 }
 
 .contenedor-etapas {
@@ -97,4 +103,109 @@
 .contenedor-btn-etapa {
     display: flex;
     justify-content: center;
+}
+
+.btn-finalizar-proceso{
+    background-color: #575756;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: 280ms;
+}
+
+.btn-finalizar-proceso:hover {
+    background-color: #3C3C3B;
+    transition: 280ms;
+}
+
+@keyframes finalizarProceso {
+    0% {
+        background-color: #575756;
+    }
+    20% {
+        background-color: #73BF7E;
+    }
+    40% {
+        background-color: #F2B05E;
+    }
+    60% {
+        background-color: #F26457;
+    }
+    80% {
+        background-color: #6C74EB;
+    }
+    100% {
+        background-color: #575756;
+    }
+}
+
+.contenedor-confimar-proceso {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.subcontenedor-confimar-proceso {
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 9px;
+    width: 400px;
+    position: relative;
+    top: 35%;
+    left: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.subcontenedor-confimar-proceso p {
+    font-size: 20px;
+    margin: 25px;
+}
+
+.cont-btn-cancelar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btns-exito {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns-exito button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.exitoso {
+    animation: finalizarProceso 3s infinite linear;
+}
+
+.exitoso:hover {
+    animation: finalizarProceso 0.5s infinite linear;
+}
+
+.no-exitoso {
+    background-color: #575756;
+    transition: 280ms;
+}
+
+.no-exitoso:hover {
+    background-color: #3C3C3B;
+    transition: 280ms;
+
 }

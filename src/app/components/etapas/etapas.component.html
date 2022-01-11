@@ -24,10 +24,12 @@
                 <app-evaluador></app-evaluador>
             </div>
         </article>
-        <div class="contenedor-btn-etapa">
-            <button *ngIf="!etapaDos && evaluadorEtapaUno" (click)="eliminarEtapaDos()" (click)="agregarEtapa()"
-                class="btn-etapa2">COMENZAR SEGUNDA ETAPA</button>
-        </div>
+        <article>
+            <div class="contenedor-btn-etapa">
+                <button *ngIf="!etapaDos && evaluadorEtapaUno" (click)="eliminarEtapaDos()" (click)="agregarEtapa()"
+                    class="btn-etapa2">COMENZAR SEGUNDA ETAPA</button>
+            </div>
+        </article>
         <article *ngIf="etapaDos" class="separador10">
             <hr>
             <div class="titulo-eliminar">
@@ -50,5 +52,17 @@
             </div>
         </article>
     </div>
-
+    <button class="btn-finalizar-proceso" (click)="finalizarProcesoEvent()">FINALIZAR PROCESO</button>
+    <div *ngIf="finalizarProceso" class="contenedor-confimar-proceso">
+        <div class="subcontenedor-confimar-proceso">
+            <div class="cont-btn-cancelar">
+                <button class="btn-eliminar-cerrar" (click)="finalizarProcesoCancelar()">CANCELAR</button>
+            </div>
+            <p>¿El estado de la fialización del proceso es?</p>
+            <div class="btns-exito">
+                <button *ngIf="etapaDos && evaluadorEtapaDos" class="exitoso" (click)="finalizarProcesoCancelar()">Exitoso</button>
+                <button class="no-exitoso" (click)="finalizarProcesoCancelar()">No Exitoso</button>
+            </div>
+        </div>
+    </div>
 </section>

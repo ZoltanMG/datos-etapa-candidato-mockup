@@ -13,6 +13,7 @@ export class EtapasComponent implements OnInit {
   etapaDos = false;
   urlContador = 1;
   urlPrueba = [1] ;
+  finalizarProceso = true;
 
   ngOnInit(): void {
   }
@@ -48,6 +49,13 @@ export class EtapasComponent implements OnInit {
 
   eliminarEvaluadorEtapaDos() {
     this.evaluadorEtapaDos = false;
+  }
+
+  finalizarProcesoEvent() {
+    this.finalizarProceso = true;
+  }
+  finalizarProcesoCancelar() {
+    this.finalizarProceso = false;
   }
 
 }
