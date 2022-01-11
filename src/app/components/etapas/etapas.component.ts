@@ -10,10 +10,10 @@ export class EtapasComponent implements OnInit {
   constructor() { }
   evaluadorEtapaUno = false;
   evaluadorEtapaDos = false;
+  finalizarProceso = false;
   etapaDos = false;
   urlContador = 1;
   urlPrueba = [1] ;
-  finalizarProceso = true;
 
   ngOnInit(): void {
   }
