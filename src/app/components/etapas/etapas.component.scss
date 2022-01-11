@@ -209,3 +209,20 @@ article {
     transition: 280ms;
 
 }
+
+.image-file-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    color: white;
+    cursor: pointer;
+    transition: 290ms;
+}
+
+.image-file-upload img{
+    margin-right: 10px;
+    filter: invert(100%);
+    width: 30px;
+}
