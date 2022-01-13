@@ -2,7 +2,7 @@
     <div class="contenedor-etapas">
 
         <article>
-            <h1 class="titulo-etapa">ETAPA 1</h1>
+            <h1 class="titulo-etapa">ETAPA 1 - Prueba técnica</h1>
             <div class="separador10">
                 <div *ngFor="let url of urlPrueba; index as idx" class="x-url">
                     <input type="text" class="input-estandar" placeholder="Url repositorio prueba Técnica*">
@@ -16,14 +16,14 @@
                 </div>
             </div>
             <div class="contenedor-evaluador separador10">
-                <h2 class="titulo-evaluador">Evaluador 1</h2>
+                <h2 class="titulo-evaluador">Evaluador prueba técnica</h2>
                 <app-evaluador></app-evaluador>
             </div>
             <button *ngIf="!evaluadorEtapaUno" (click)="agregarEvaluadorEtapaUno()" class="btn-agregar">+ Agregar
                 Evaluador</button>
             <div *ngIf="evaluadorEtapaUno" class="contenedor-evaluador separador10">
                 <div class="titulo-eliminar">
-                    <h2 class="titulo-evaluador">Evaluador 2</h2>
+                    <h2 class="titulo-evaluador">Evaluador 2 prueba técnica</h2>
                     <button (click)="eliminarEvaluadorEtapaUno()" class="btn-eliminar-cerrar"> X Eliminar</button>
                 </div>
                 <app-evaluador></app-evaluador>
@@ -38,11 +38,11 @@
         <article *ngIf="etapaDos" class="separador10">
             <hr>
             <div class="titulo-eliminar">
-                <h1 class="titulo-etapa separador10">ETAPA 2</h1>
+                <h1 class="titulo-etapa separador10">ETAPA 2 - Prueba teórica</h1>
                 <button (click)="eliminarEtapaDos()" class="btn-eliminar-cerrar"> X Eliminar etapa</button>
             </div>
             <div class=" contenedor-evaluador separador10">
-                <h2 class="titulo-evaluador">Evaluador 1</h2>
+                <h2 class="titulo-evaluador">Evaluador prueba teórica</h2>
                 <app-evaluador></app-evaluador>
                 
             </div>
@@ -50,7 +50,7 @@
                 Evaluador</button>
             <div *ngIf="evaluadorEtapaDos" class="contenedor-evaluador separador10">
                 <div class="titulo-eliminar">
-                    <h2 class="titulo-evaluador">Evaluador 2</h2>
+                    <h2 class="titulo-evaluador">Evaluador 2 prueba teórica</h2>
                     <button (click)="eliminarEvaluadorEtapaDos()" class="btn-eliminar-cerrar"> X Eliminar</button>
                 </div>
                 <app-evaluador></app-evaluador>
